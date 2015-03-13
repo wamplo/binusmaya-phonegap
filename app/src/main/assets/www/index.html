@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1" />
+        <link rel="stylesheet" type="text/css" href="file_ass/css/main.css" />
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+        <title>Hello World</title>
+    </head>
+    <body>
+        <div class="app see-jadwal">
+            <section id="login">
+                <header class="app-head">
+                    <h1>BINUS Maya Schedule</h1>
+                </header>
+                
+                <form action="" id="login-fr">
+                    <p>Please login first</p>
+                    <input type="text" id="fr-binusian" placeholder="Binusian ID" class="form-control">
+                    <input type="password" id="fr-password" placeholder="Password" class="form-control">
+                    <button class="form-btn">Login</button>
+                </form>
+            </section>
+            <section id="jadwal">
+                <header class="app-head">
+                    <div class="btn-left">
+                        <button id="menu-open"><i class="fa fa-bars"></i></button>
+                    </div>
+                    <h1>Schedule</h1>
+                    <div class="btn-right">
+                        <button id="cek-jadwal"><i class="fa fa-refresh"></i></button>
+                    </div>
+                </header>
+                <div class="content">
+                    <ul class="jadwal" id="list-jadwal">
+                        <li>
+                            <p class="not_found">
+                                <i class="fa fa-frown-o"></i>
+                                <span>No schedule found</span>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section id="about">
+                <header class="app-head">
+                    <div class="btn-left">
+                        <button id="back-home"><i class="fa fa-chevron-left"></i></button>
+                    </div>
+                    <h1>About</h1>
+                </header>
+                <div class="content about-content">
+                    <img src="img/bmaya.png" alt="" width="200px;">
+                    <p>BINUS MAYA For android BETA Created With Love</p>
+                    <p>&copy; 2014 &mdash; 25tudio</p>
+                    <small>Using Cordova Phonegap, Native Code, Android Asynchronous Http Client, Jsoup (HTML Parser), Android Studio, Gulp, jQuery, BinusMaya (Anggrek)</small>
+                    <br><br>
+                    <small><strong>Note:</strong> We not store your Binusian ID or Password immediately, all process directly to binus server, not using Proxy or scrapper</small>
+                </div>
+            </section>
+            <div class="menu-left">
+                <ul>
+                    <li><a href="#logout" data-action="logout">Logout</a></li>
+                    <li><a href="#about" data-action="about">About</a></li>
+                </ul>
+            </div>
+            <div class="backdrop"></div>
+        </div>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/moments.js"></script>
+        <script type="text/javascript" src="file_ass/js/main.js"></script>
+    </body>
+</html>

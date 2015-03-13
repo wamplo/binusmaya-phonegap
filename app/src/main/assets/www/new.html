@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bimay For Android</title>
+	<link rel="stylesheet" href="js/jquery.mobile-1.4.5.min.css">
+	<link rel="stylesheet" href="file_ass/css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+	<body>
+		<div data-role="page" id="splash-page">
+			<h2>Binus maya MINI [BETA]</h2>
+		</div>
+		<div data-role="page" id="login-page">
+			<div data-role="header" data-position="fixed" class="jqm-header">
+				<h2>Binus Maya Mini</h2>
+			</div>
+			<section>
+				<div class="container">
+					<form id="form-login">
+						<label for="text-1">Binusian ID</label>
+						<input type="text" name="text-1" id="fr-binusian" value="">
+						<label for="">Password</label>
+						<input type="password" name="text-3" id="fr-password" value="">
+						<button class="ui-btn blue-btn b-blue">Login</button>
+					</form>
+				</div>
+			</section>
+		</div>
+		<div data-role="page" id="jadwal-page">
+			<div data-role="panel" data-position-fixed="true" data-display="overlay" id="main-menu">
+				<p class="last-update">
+					<strong id="fn"></strong>
+					<span id="lastup">Last update &mdash; 25 May 2011</span>
+				</p>
+				<ul data-role="listview">
+					<li><a href="#" data-action="logout">Logout</a></li>
+					<li><a href="#" data-action="about">About</a></li>
+				</ul>
+			</div>
+			<div data-role="header" data-position="fixed" class="jqm-header">
+				<h2>Schedule</h2>
+				<a href="#main-menu" data-icon="bars" data-iconpos="notext">Menu</a>
+				<a href="javascript:void(0)" id="cek-jadwal" data-icon="refresh" data-iconpos="notext">Refresh</a>
+			</div>
+			<div class="loading-bar">
+				<div class="bars"></div>
+			</div>
+			<section>
+				<div class="list-of">
+					<ul data-role="listview" id="list-jadwal">
+						<!--<li data-role="list-divider">Friday, October 8, 2010</li>
+						<li>
+							<h2>Konsep Bahasa Program</h2>
+							<p>F2F &mdash; Room 200 &mdash; Buidling Anggrek</p>
+							<p class="ui-li-aside"><strong>6:24</strong>PM</p>
+						</li>
+						<li>
+							<h2>Konsep Bahasa Program</h2>
+							<p>F2F &mdash; Room 200 &mdash; Buidling Anggrek</p>
+							<p class="ui-li-aside"><strong>6:24</strong>PM</p>
+						</li>
+						<li>
+							<h2>Konsep Bahasa Program</h2>
+							<p>F2F &mdash; Room 200 &mdash; Buidling Anggrek</p>
+							<p class="ui-li-aside"><strong>6:24</strong>PM</p>
+						</li>-->
+						<!--<li>
+                            <p class="not_found">
+                                <i class="fa fa-frown-o"></i>
+                                <span>No schedule found</span>
+                            </p>
+                        </li>-->
+					</ul>
+				</div>
+			</section>
+		</div>
+		<div data-role="page" id="about-page">
+			<div data-role="header" data-position="fixed" class="jqm-header">
+				<h2>About</h2>
+				<a href="javascript:void(0)" class="h-back-btn" data-icon="carat-l" data-iconpos="notext">Back</a>
+			</div>
+			<section>
+				<div class="container about-content">
+					<img src="img/bmaya.png" alt="" width="200px;">
+                    <p>BINUS MAYA For android BETA Created With Love</p>
+                    <p>&copy; 2014 &mdash; 25tudio</p>
+                    <small>Using Cordova Phonegap, Native Code, Android Asynchronous Http Client, Jsoup (HTML Parser), Gulp, jQuery Mobile, Moments, _.Underscore, BinusMaya (Anggrek)</small>
+                    <br><br>
+                    <small><strong>Note:</strong> We not store your Binusian ID or Password immediately, all process directly to binus server, not using Proxy or scrapper</small>
+				</div>
+			</section>
+		</div>
+		<script type="text/javascript" src="cordova.js"></script>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/underscore.js"></script>
+		<script src="js/jquery.mobile-1.4.5.min.js"></script>
+		<script type="text/javascript" src="js/moment.js"></script>
+        <script type="text/javascript" src="file_ass/js/main.js"></script>
+	</body>
+</html>

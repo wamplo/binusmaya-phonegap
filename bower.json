@@ -1,0 +1,22 @@
+{
+  "name": "reading-blub",
+  "version": "0.0.1",
+  "homepage": "http://reading-blub.com",
+  "authors": [
+    "pedox"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "source/vendor"
+  ],
+  "dependencies": {
+    "modernizr": "2.8.2",
+    "jquery": "1.11.1",
+    "jquery-mockjax": "1.6.1",
+    "perfect-scrollbar": "0.5.7",
+    "jquery-waypoints": "*"
+  }
+}
